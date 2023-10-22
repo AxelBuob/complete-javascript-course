@@ -1,26 +1,7 @@
-let scoreDolphins = [96, 108, 89];
-let scoreKoalas = [88, 91, 110];
+let bill = 40;
 
-
-function average(score) {
-    let average = 0;
-    let length = score.length;
-    score.forEach((element) => {
-        average += element;
-    })
-    return average / length;
-}
-
-let averageDolphins = average(scoreDolphins);
-let averageKoalas = average(scoreKoalas);
-
-console.log(averageDolphins);
-console.log(averageKoalas);
-
-if (averageDolphins > averageKoalas) {
-    console.log("Dolphins win the trophy");
-} else if (averageDolphins < averageKoalas) {
-    console.log("Koalas win the trophy");
-} else {
-    console.log("Both win the trophy");
-}
+console.log(`
+    The bill was ${bill}, the tip was
+    ${tip = bill < 50 || bill > 300 ? bill * 0.20 : bill * 0.15}
+    , and the total value ${tip + bill}
+`);
